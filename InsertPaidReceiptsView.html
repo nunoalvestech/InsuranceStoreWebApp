@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+
+  <body style="height: 1500px">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand"><strong>Seguros</strong></a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="#"><strong>Início</strong></a></li>
+          <li><a href="#"><strong>Cotações</strong></a></li>
+          <li><a href="#"><strong>Clientes</strong></a></li>
+          <li><a href="#"><strong>Apólices</strong></a></li>
+          <li class="dropdown">
+    	      <a class="dropdown-toggle" data-toggle="dropdown" href="#"><strong>Recibos</strong><span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-header">Efetuar Pagamento</li>
+              <li><a href="ReceiptsListView.html">Recibos de Prémio</a></li>
+              <li><a href="#">Recibos de Indemnização</a></li>
+  	          <li class="divider"></li>
+              <li class="dropdown-header">Inserir Listagens</li>
+              <li><a href="#">Recibos a Pagamento</a></li>
+              <li><a href="#">Recibos Cobrados Aut.</a></li>
+            </ul>
+    	     </li>
+          <li><a href="#"><strong>Sinistros</strong></a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> <strong>Sair</strong></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container" style="margin-top:55px">
+
+      <!-- Title -->
+      <h1><strong>Recibos Cobrados Automaticamente</strong></h1>
+
+      <!-- Messaging -->
+      <div class="alert alert-dismissable alert-success">
+        <strong>Success!</strong> Indicates a successful or positive action.
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      </div>
+
+      <!--  File Upload Form -->
+      <form>
+        <div class="input-group">
+          <span class="input-group-addon"><strong>Ficheiro</strong></span>
+          <input id="msg" type="text" class="form-control" name="msg" placeholder="Ficheiro a carregar">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+              <i class="glyphicon glyphicon-upload"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <div class="table-responsive row" style="margin-top:10px">
+        <div class="col-md-12">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th class="col-md-1 text-center"></th>
+                <th class="col-md-4 text-left">Tomador</th>
+                <th class="col-md-1 text-center">S</th>
+                <th class="col-md-1 text-center">R</th>
+                <th class="col-md-1 text-center">Apólice</th>
+                <th class="col-md-1 text-center">Recibo</th>
+                <th class="col-md-1 text-center">Efetuado</th>
+                <th class="col-md-1 text-center">Pagamento</th>
+                <th class="col-md-1 text-center">Prémio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center">OK</td>
+                <td class="text-left">Nuno Miguel Afonso Alves</td>
+                <td class="text-center"><img src="img/icon-car.png" width="20" height="17" alt="Car Icon"></img></td>
+                <td class="text-center"><img src="img/icon-car.png" width="20" height="17" alt="Car Icon"></img></td>
+                <td class="text-center">1596352</td>
+                <td class="text-center">123456</td>
+                <td class="text-center">2017/05/01</td>
+                <td class="text-center">SDD</td>
+                <td class="text-center">10548,36€</td>
+              </tr>
+              <tr>
+                <td class="text-center">FAIL</td>
+                <td class="text-left">Jacinto Dantas Alves</td>
+                <td class="text-center"><img src="img/icon-car.png" width="20" height="17" alt="Car Icon"></img></td>
+                <td class="text-center"><img src="img/icon-car.png" width="20" height="17" alt="Car Icon"></img></td>
+                <td class="text-center">159635223</td>
+                <td class="text-center">12345612</td>
+                <td class="text-center">2017/10/01</td>
+                <td class="text-center">SIBS</td>
+                <td class="text-center">548,36€</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
